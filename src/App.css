@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* font-family: "Nunito", sans-serif; */
+.main-container {
   display: flex;
   flex-direction: column;
+}
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: rgb(182, 172, 172);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.container {
+  display: flex;
+}
+
+.leftsidebar {
+  height: 100vh;
+  /* background: green; */
+  position: fixed;
+  top: 10vh;
+  left: 0;
+  width: 20vw;
+}
+.product-container {
+  color: white;
+  /* z-index: 999; */
+  height: 100%;
+  width: 100%;
+  border: 2px solid gray;
+  margin-top: 10vh;
+  margin-left: 20vw;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.filter_heading {
+  color: white;
+  text-align: center;
+}
+.single-label {
+  /* justify-content: end; */
+  margin: 1rem 1rem;
+  display: flex;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.select {
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  width: 10vw;
+  background: #000;
+  border: 2px solid gray;
+  color: white;
+  border-radius: 5px;
+}
+.option {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+.filter-container {
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+  width: 20vw;
+  height: 50vh;
+  border: 1px solid gray;
+  /* background-color: gray; */
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card-image {
+  height: 60%;
+  background: #c7acac;
+  /* overflow: hidden; */
+}
+.card-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  height: 40%;
+}
+
+.card-rating {
+  /* color: goldenrod; */
+  display: flex;
+  align-items: center;
+}
+.single-outcard {
+  margin: auto;
+  margin-top: 2rem;
+}
+.card-name {
+  display: flex;
+}
+.golden {
+  color: goldenrod;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
 }
