@@ -134,6 +134,7 @@ const ProductList = () => {
         </div>
 
         {/* Product List Section */}
+        <div className="main-product-container">
         <div className="product-container">
           {filteredProducts.map((product) => (
             <div key={product.id} className="single-outcard">
@@ -151,6 +152,7 @@ const ProductList = () => {
               />
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>

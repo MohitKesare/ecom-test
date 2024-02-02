@@ -12,6 +12,13 @@
   position: fixed;
   top: 0;
   left: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.navbar_para {
+  font-family: "Nunito", sans-serif;
+  font-size: 4vh;
 }
 .container {
   display: flex;
@@ -24,6 +31,10 @@
   top: 10vh;
   left: 0;
   width: 20vw;
+}
+.main-producy-container {
+  width: 100%;
+  height: 100%;
 }
 .product-container {
   color: white;
@@ -73,6 +84,7 @@
   /* background-color: gray; */
   border-radius: 1rem;
   overflow: hidden;
+  /* margin-left: 2rem; */
 }
 .card-image {
   height: 60%;
@@ -106,4 +118,43 @@
 .card-image img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 1050px) {
+  .product-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .product-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .leftsidebar {
+    width: 25vw;
+  }
+  .product-container {
+    margin-left: 30vw;
+  }
+  .card {
+    width: fit-content;
+    height: 60vh;
+  }
+  .card-image {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: fit-content;
+  }
+  .card-image {
+    width: 100%;
+  }
+  .product-container {
+    grid-template-columns: 1fr;
+    border: none;
+    border-left: 1px solid gray;
+  }
 }
